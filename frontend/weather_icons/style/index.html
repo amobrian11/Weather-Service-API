@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8' />
+  <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+  <meta http-equiv='X-UA-Compatible' content='ie=edge' />
+  <title>Weather App!</title>
+  <link rel='stylesheet' type='text/css' href='./style/style.css'>
+</head>
+<body>
+
+   <!-- input box -->
+  <nav class= "navlarge">
+    <input id = 'zip' type="text" placeholder="Please Enter a Zip Code"/>
+    <button id='submit' type='submit' value='Submit'><i class="fa fa-search fa-2x" aria-hidden="true"></i></button>
+  </nav>
+  <div class="wrapper">
+    <article class="imageWrapper">
+      <div class="content" id= 'display'>
+        <div class= "groupInfo">
+
+          <!-- temp, location and description -->
+          <div class= "info infoRight">
+            <div id="location"><p>location</p></div>
+          <div id="temp"><h1>0</h1></div>
+            <div id="desc"><p>description</p></div>
+          </div><!-- end info -->
+
+          <!-- max and min temps -->
+          <div class= "info infoLeft">
+            <div id="minTemp"><h3>0</h3></div>
+            <p>Min. </br>Temp</p>
+            <div id="maxTemp"><h3>0</h3></div>
+            <p>Max. </br>Temp</p>
+          </div>
+        </div> 
+      </div> 
+    </article> 
+  </div> 
+  <script src='./server.js></script>
+</body>
+</html>
